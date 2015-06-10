@@ -8,7 +8,7 @@
 import scrapy
 
 
-class UsercrawlerItem(scrapy.Item):
+class UserItem(scrapy.Item):
     uid = scrapy.Field()
     pid = scrapy.Field()
     name = scrapy.Field()

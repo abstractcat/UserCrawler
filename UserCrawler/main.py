@@ -6,11 +6,12 @@ from twisted.internet import reactor
 from scrapy.crawler import Crawler
 from scrapy import log, signals
 from scrapy.utils.project import get_project_settings
+
 from spiders import userSpider
 
 
 def start():
-    uid_list = map(lambda x:x.strip(),open('E:/PyCharm/CatPackages/resources/doc/user_500.txt').readlines())
+    uid_list = map(lambda x: x.strip(), open('E:/PyCharm/CatPackages/resources/doc/user_500.txt').readlines())
     spider = userSpider.UserSpider(uid_list=uid_list)
 
     settings = get_project_settings()

@@ -19,9 +19,9 @@ class UsercrawlerPipeline(object):
         uid = item['uid']
         pid = item['pid']
         name = item['name']
-        #follow_num = item['follow_num']
-        #fan_num = item['fan_num']
-        #post_num = item['post_num']
-        #verify = item['verify']
+        # follow_num = item['follow_num']
+        # fan_num = item['fan_num']
+        # post_num = item['post_num']
+        # verify = item['verify']
 
-        self.db.execute(sql%(pid, name,uid))
+        self.db.execute(sql % (pid, name, uid))
